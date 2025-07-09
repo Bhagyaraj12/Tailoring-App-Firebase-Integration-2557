@@ -1,0 +1,111 @@
+.mobile-container {
+  max-width: 428px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.screen-container {
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.category-card {
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.design-card {
+  transition: all 0.3s ease;
+}
+
+.design-card:hover {
+  transform: translateY(-2px);
+}
+
+.design-card.selected {
+  border: 2px solid #e441f7;
+  background: #fef7ff;
+}
+
+.addon-checkbox {
+  transform: scale(1.2);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #e441f7 0%, #c826d3 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(228, 65, 247, 0.3);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(14, 165, 233, 0.3);
+}
+
+.measurement-form {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.upload-area {
+  border: 2px dashed #e441f7;
+  border-radius: 12px;
+  background: #fef7ff;
+  transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+  border-color: #c826d3;
+  background: #fdeeff;
+}
+
+.summary-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+}
+
+.floating-action-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e441f7 0%, #c826d3 100%);
+  box-shadow: 0 6px 20px rgba(228, 65, 247, 0.3);
+  transition: all 0.3s ease;
+}
+
+.floating-action-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(228, 65, 247, 0.4);
+}
+
+@media (max-width: 640px) {
+  .mobile-container {
+    max-width: 100%;
+    box-shadow: none;
+  }
+  
+  .screen-container {
+    padding: 16px;
+  }
+}

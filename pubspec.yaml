@@ -1,0 +1,52 @@
+name: tailoring_app
+description: A tailoring service app with customer, admin, and tailor roles
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  firebase_core: ^2.15.1
+  firebase_auth: ^4.7.3
+  cloud_firestore: ^4.8.5
+  firebase_storage: ^11.2.6
+  provider: ^6.0.5
+  image_picker: ^1.0.2
+  intl: ^0.18.1
+  cached_network_image: ^3.2.3
+  flutter_svg: ^2.0.7
+  uuid: ^3.0.7
+  shimmer: ^3.0.0
+  pinput: ^3.0.0
+  url_launcher: ^6.1.12
+  flutter_native_splash: ^2.3.2
+  google_fonts: ^5.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.2
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  min_sdk_android: 21
+  
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/splash_logo.png
+  android_12:
+    image: assets/images/splash_logo.png
+    icon_background_color: "#FFFFFF"
